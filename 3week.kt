@@ -55,7 +55,7 @@ fun main(){
         }
         else return 0f
     }
-    // val newResult = newSolusion(3,2) { x, y -> x / y } <<-- 오류남
+    val newResult = newSolusion(3,2) { x, y -> x / y }
     // (Int, Int) -> Float의 의미는 자료형의 변환이 아니였다. 단지 반환값의 자료형을 정하는 것이였고
     // 정해준 자료형과 일치하지 않으면 오류가 발생하는 것이였다.
     val newResult = newSolusion(3,2) { x, y -> (x / y).toFloat() }
